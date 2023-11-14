@@ -52,6 +52,7 @@ h1 {
 .card-wrapper > div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .temp {
@@ -62,4 +63,37 @@ h1 {
 .descr {
   font-size: 50px;
   font-weight: 400;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+input {
+  flex: 1;
+  max-width: 300px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px white;
+  color: rgb(0, 0, 0);
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+button {
+  width: 120px;
+  border-radius: 18px;
+  border: none;
+  padding: 4px 6px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(226, 226, 226);
+}
+
+::placeholder {
+  color: rgb(206, 199, 199);
 }
