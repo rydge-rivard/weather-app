@@ -8,12 +8,11 @@ async function getWeather(location) {
     weather.location.country,
     weather.location.region,
     weather.location.name,
+    weather.location.localtime,
     weather.current.wind_dir,
     weather.current.wind_kph,
     weather.current.uv,
     weather.current.temp_c,
-    weather.current.feelslike_c,
-    weather.current.condition.text,
     weather.current.condition.icon
   );
   console.log(today);
@@ -23,24 +22,20 @@ function createWeatherObj(
   country,
   region,
   name,
+  localtime,
   wind_dir,
   wind_kph,
-  uv,
   temp_c,
-  feelslike_c,
-  text,
   icon
 ) {
   return {
     country,
     region,
     name,
+    localtime,
     wind_dir,
     wind_kph,
-    uv,
     temp_c,
-    feelslike_c,
-    text,
     icon,
   };
 }
