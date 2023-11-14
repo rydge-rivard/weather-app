@@ -41,3 +41,14 @@ function createWeatherObj(
 }
 
 getWeather("Simcoe");
+
+const content = document.querySelector(".grid");
+const input = content.querySelector("input");
+const btn = content.querySelector("button");
+
+btn.addEventListener("click", () => searchWeather(input.value));
+
+function searchWeather(location) {
+  getWeather(location);
+  input.value = "";
+}
